@@ -1,0 +1,61 @@
+<DOCTYPE html>
+<html>
+<head>
+<link href="estilo.css" rel="stylesheet"/>
+<style>
+	#telefone, #email, #sexo  {
+		background-color: pink;
+	}
+</style>
+</head>
+
+<body>
+
+<form action="/action_page.php" method="POST">
+	<p>Usuário nome:<br></p>
+	<input type="text" name="nome">
+	<br><br>
+	
+	<p>Usuário senha:<br></p>
+	<input type="password" name="senha"><br>
+	<br><br>
+	
+	
+	<p id="telefone">Telefone:</p><br>
+	<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+	<br><br>
+	
+	<p id="email">Email:</p><br>
+	<input type="email" name="email">
+	<br><br>
+	
+	<p id="sexo">Sexo:</p><br>
+	<input type="radio" name="gender" value="Masculino">
+	Masculino<br>
+	<input type="radio" name="gender" value="Feminino">
+	Feminino<br>
+	<input type="radio" name="gender" value="Outro">
+	Outro<br>
+	<br><br>
+	
+	<h1 style="color:purple;"> Idade:</h1>
+	<input type="number" name="idade">
+	<br><br>
+	
+	<h1 style="color:purple;"> Curso:</h1><br>
+	<input type="checkbox" name="curso" value="Sistemas">Sistemas para internet<br>
+	<input type="checkbox" name="curso" value="Redes">Redes<br>
+	<input type="checkbox" name="curso" value="Engenharia">Engenharia da Computação<br>
+	<br>
+	
+	<h2 style="color:purple;">Você gosta do seu curso?</h2>
+	<input type="range" name="satisfação" min="1" max="10" step="1" value="100">
+	<br><br>
+	
+	<input type="submit">
+</form>
+
+
+
+</body>
+</html>
